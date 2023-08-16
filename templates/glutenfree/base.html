@@ -17,38 +17,9 @@
     <title>Document</title>
 </head>
 <body>
-      <h1>Hello World!!!</h1>
-      <br>
-      <br>
-      <a href="" class="btn btn-primary">Add recipe</a>
-      <table class="table">
-      <tr>
-          <td>Titulo</td> 
-            <td>Ingredientes</td>
-            <td>Opcoes</td>
-      </tr>
-       {% for item in glutenfrees%}         
-          <tr>
-            <td>
-             {{ item.title}}       
-            </td>
-          
-            <td>
-                {{ item.ingredients }}       
-            </td>
-            
-          <td>
-           Editar
+  {% block content %}
 
-          </td>
-
-
-
-          </tr>
-    {% endfor %}       
-      </table>
-
-
+  {% endblock %}
     
 </body>
 </html>
